@@ -7,4 +7,3 @@ return {
     vim.fn['mkdp#util#install']()
   end,
 }
-

@@ -1,4 +1,4 @@
-return{
+return {
   { -- you can easily change to a different colorscheme.
     -- change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
@@ -18,5 +18,5 @@ return{
   },
 
   -- highlight todo, notes, etc in comments
-  { 'folke/todo-comments.nvim', event = 'vimenter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } }
+  { 'folke/todo-comments.nvim', event = 'vimenter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 }

@@ -1,43 +1,48 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
 -- line numbers
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- Mode is already shown in the custom status bar
-vim.opt.showmode = false
+vim.o.showmode = false
 
 -- Save undo history
-vim.opt.undofile = true
+vim.o.undofile = true
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- Sign column on for git
-vim.opt.signcolumn = "yes"
+vim.o.signcolumn = 'yes'
 
 -- Enable break indent
-vim.opt.breakindent = true
+vim.o.breakindent = true
 
 -- Decrease update time
-vim.opt.updatetime = 400
+vim.o.updatetime = 250
+
+-- Decrease mapped sequence wait time
+vim.o.timeoutlen = 300
 
 -- Split to the right/bottom as default
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- custom chars for spacing etc
--- vim.opt.list = true
--- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.o.list = true
+-- vim.o.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Live preview for substitutions
-vim.opt.inccommand = "split"
+vim.o.inccommand = 'split'
 
-vim.opt.cursorline = true
+vim.o.cursorline = true
 
-vim.opt.scrolloff = 10
+vim.o.scrolloff = 10
 
-vim.opt.linebreak = true
+vim.o.confirm = true
+
+vim.o.linebreak = true
