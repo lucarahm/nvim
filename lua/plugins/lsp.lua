@@ -112,8 +112,8 @@ do
   --  See `:help lsp-config` for information about keys and how to configure
   ---@type table<string, vim.lsp.Config>
   local servers = {
-    -- clangd = {},
-    -- gopls = {},
+    clangd = {},
+    gopls = {},
     -- pyright = {},
     -- rust_analyzer = {},
     --
@@ -122,6 +122,15 @@ do
     --
     -- But for many setups, the LSP (`ts_ls`) will work just fine
     -- ts_ls = {},
+
+    -- python setup (lint + type checking)
+    ruff = {},
+    ty = {},
+
+    -- julials = {},
+
+    -- Solidity
+    solidity_ls = {},
 
     stylua = {}, -- Used to format Lua code
 
