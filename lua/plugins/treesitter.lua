@@ -46,6 +46,7 @@ do
   local available_parsers = require('nvim-treesitter').get_available()
   vim.api.nvim_create_autocmd('FileType', {
     callback = function(args)
+      if args.match == 'tex' then return end
       local buf, filetype = args.buf, args.match
 
       local language = vim.treesitter.language.get_lang(filetype)
@@ -66,4 +67,3 @@ do
     end,
   })
 end
-
